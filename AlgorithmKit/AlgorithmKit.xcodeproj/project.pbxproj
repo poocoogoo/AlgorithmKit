@@ -29,6 +29,7 @@
 		E42DDA471EDEBD070043E131 /* AlgorithmKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42DDA4C1EDEBD070043E131 /* AlgorithmKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmKitTests.swift; sourceTree = "<group>"; };
 		E42DDA4E1EDEBD070043E131 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E42DDA751EDED9740043E131 /* HashTable.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HashTable.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,9 @@
 		E42DDA401EDEBD070043E131 /* AlgorithmKit */ = {
 			isa = PBXGroup;
 			children = (
+				E42DDA5A1EDEC2450043E131 /* Data Structure */,
+				E42DDA591EDEC1790043E131 /* Serach */,
+				E42DDA581EDEC11D0043E131 /* Sort */,
 				E42DDA411EDEBD070043E131 /* AlgorithmKit.h */,
 				E42DDA421EDEBD070043E131 /* Info.plist */,
 			);
@@ -84,6 +88,36 @@
 				E42DDA4E1EDEBD070043E131 /* Info.plist */,
 			);
 			path = AlgorithmKitTests;
+			sourceTree = "<group>";
+		};
+		E42DDA581EDEC11D0043E131 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		E42DDA591EDEC1790043E131 /* Serach */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Serach;
+			sourceTree = "<group>";
+		};
+		E42DDA5A1EDEC2450043E131 /* Data Structure */ = {
+			isa = PBXGroup;
+			children = (
+				E42DDA5B1EDEC3320043E131 /* Hash Table */,
+			);
+			path = "Data Structure";
+			sourceTree = "<group>";
+		};
+		E42DDA5B1EDEC3320043E131 /* Hash Table */ = {
+			isa = PBXGroup;
+			children = (
+				E42DDA751EDED9740043E131 /* HashTable.playground */,
+			);
+			path = "Hash Table";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +182,7 @@
 				TargetAttributes = {
 					E42DDA3D1EDEBD070043E131 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					E42DDA461EDEBD070043E131 = {
@@ -322,6 +357,7 @@
 		E42DDA531EDEBD070043E131 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +369,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftlang.AlgorithmKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +377,7 @@
 		E42DDA541EDEBD070043E131 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
